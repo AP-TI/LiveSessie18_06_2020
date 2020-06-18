@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a64edd0d-94c5-4f4f-aa35-bd8363264098" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/Deel4Oefening1.Service/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="6a60a94a-cacd-4000-84c4-a2a0524b5023" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Deel4Oefening1.Service/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="41f5d69f-5b24-488f-ba3f-d343b732cfd5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Deel4Oefening1.Service/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="df81ca6b-374e-424d-9279-6a13aa9f58ba" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Deel4Oefening1.Service/Service1/mex" />
+    <MetadataFile FileName="Deel4Oefening1.Service.xsd" MetadataType="Schema" ID="e7199fa0-71c8-4960-ac54-861317691923" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Deel4Oefening1.Service/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
