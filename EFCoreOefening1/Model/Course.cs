@@ -2,7 +2,7 @@
 
 namespace EFCoreOefening1
 {
-    internal class Course
+    public class Course
     {
         public int CourseId { get; set; }
         public string CourseName { get; set; }

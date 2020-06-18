@@ -13,7 +13,7 @@ namespace EFCoreOefening1
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-QFF0ENQ\SQLEXPRESS;Initial Catalog=SchoolDB;Integrated Security=True;");
+            optionsBuilder.UseLazyLoadingProxies().UseSqlServer(@"Data Source=DESKTOP-QFF0ENQ\SQLEXPRESS;Initial Catalog=SchoolDB;Integrated Security=True;");
         }
     }
 }

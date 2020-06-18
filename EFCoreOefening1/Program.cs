@@ -10,8 +10,11 @@ namespace EFCoreOefening1
         private static void Main(string[] args)
         {
             // SearchStudent("a").ForEach(Console.WriteLine);
-            SearchStudent1("a").ForEach(Console.WriteLine);
             // SearchStudent1WithSelect("a").ForEach(Console.WriteLine);
+            // SearchStudentEager("a").ForEach(Console.WriteLine);
+            using SchoolContext context = new SchoolContext();
+            SearchStudentLazy("a", context).ForEach(Console.WriteLine);
+                        
         }
 
         private static void AddStudent(string name)
@@ -34,11 +37,20 @@ namespace EFCoreOefening1
             return result.ToList();
         }
 
-        private static List<Student> SearchStudent1(string name)
+        private static List<Student> SearchStudentEager(string name)
         {
             using SchoolContext context = new SchoolContext();
             return context.Students.Include(s => s.Courses).Where(s => s.Name.Contains(name)).ToList();
         }
+
+        private static List<Student> SearchStudentLazy(string name, SchoolContext context)
+        {
+            return context.Students.Where(s => s.Name.Contains(name)).ToList();
+        }
+        /*        private static List<Student> SearchStudent1(string name, SchoolContext context)
+                {
+                    return context.Students.Where(s => s.Name.Contains(name)).ToList();
+                }*/
 
         private static List<Student> SearchStudent1WithSelect(string name)
         {
