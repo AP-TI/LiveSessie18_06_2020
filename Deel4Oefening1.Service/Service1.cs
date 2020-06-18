@@ -24,5 +24,19 @@ namespace Deel4Oefening1.Service
                 return boetes;
             }
         }
+
+        public void AddBoete(int betalingsnr, int spelersnr, DateTime datum, decimal bedrag)
+        {
+            using(SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO BOETES (Betalingsnr, Spelersnr, Datum, Bedrag) VALUES(@Betalingsnr, @Spelersnr, @Datum, @Bedrag)", conn);
+                cmd.Parameters.AddWithValue("Betalingsnr", betalingsnr);
+                cmd.Parameters.AddWithValue("Spelersnr", spelersnr);
+                cmd.Parameters.AddWithValue("Datum", datum);
+                cmd.Parameters.AddWithValue("Bedrag", bedrag);
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }

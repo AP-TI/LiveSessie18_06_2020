@@ -13,6 +13,9 @@ namespace Deel4Oefening1.Service
     {
         [OperationContract]
         List<Boete> GetBoetes();
+
+        [OperationContract]
+        void AddBoete(int betalingsnr, int spelersnr, DateTime datum, decimal bedrag);
     }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.

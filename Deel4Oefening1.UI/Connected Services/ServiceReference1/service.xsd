@@ -13,4 +13,19 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="AddBoete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="betalingsnr" type="xs:int" />
+        <xs:element minOccurs="0" name="spelersnr" type="xs:int" />
+        <xs:element minOccurs="0" name="datum" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="bedrag" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBoeteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

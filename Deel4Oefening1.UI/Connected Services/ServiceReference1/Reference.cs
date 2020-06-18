@@ -115,6 +115,12 @@ namespace Deel4Oefening1.UI.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetBoetes", ReplyAction="http://tempuri.org/IService1/GetBoetesResponse")]
         System.Threading.Tasks.Task<Deel4Oefening1.UI.ServiceReference1.Boete[]> GetBoetesAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddBoete", ReplyAction="http://tempuri.org/IService1/AddBoeteResponse")]
+        void AddBoete(int betalingsnr, int spelersnr, System.DateTime datum, decimal bedrag);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddBoete", ReplyAction="http://tempuri.org/IService1/AddBoeteResponse")]
+        System.Threading.Tasks.Task AddBoeteAsync(int betalingsnr, int spelersnr, System.DateTime datum, decimal bedrag);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -150,6 +156,14 @@ namespace Deel4Oefening1.UI.ServiceReference1 {
         
         public System.Threading.Tasks.Task<Deel4Oefening1.UI.ServiceReference1.Boete[]> GetBoetesAsync() {
             return base.Channel.GetBoetesAsync();
+        }
+        
+        public void AddBoete(int betalingsnr, int spelersnr, System.DateTime datum, decimal bedrag) {
+            base.Channel.AddBoete(betalingsnr, spelersnr, datum, bedrag);
+        }
+        
+        public System.Threading.Tasks.Task AddBoeteAsync(int betalingsnr, int spelersnr, System.DateTime datum, decimal bedrag) {
+            return base.Channel.AddBoeteAsync(betalingsnr, spelersnr, datum, bedrag);
         }
     }
 }
