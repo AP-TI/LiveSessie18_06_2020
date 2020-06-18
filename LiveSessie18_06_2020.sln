@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreOefening1", "EFCoreOe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deel1Oefening5", "Deel1Oefening5\Deel1Oefening5.csproj", "{D843AEEE-FD3C-446A-9414-A0654EB68AA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deel3Oefening5", "Deel3Oefening5\Deel3Oefening5.csproj", "{98976299-EACA-46F5-9A8E-DFB1B1F61F12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D843AEEE-FD3C-446A-9414-A0654EB68AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D843AEEE-FD3C-446A-9414-A0654EB68AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D843AEEE-FD3C-446A-9414-A0654EB68AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98976299-EACA-46F5-9A8E-DFB1B1F61F12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98976299-EACA-46F5-9A8E-DFB1B1F61F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98976299-EACA-46F5-9A8E-DFB1B1F61F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98976299-EACA-46F5-9A8E-DFB1B1F61F12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
